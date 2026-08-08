@@ -1,0 +1,40 @@
+.app-layout {
+  position: fixed;
+  inset: 0;
+}
+
+.app-layout__stage {
+  position: absolute;
+  inset: 0;
+}
+
+.app-layout__toolbar {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.app-layout__status {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 10;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--fg-muted);
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .app-layout__toolbar {
+    top: auto;
+    bottom: 12px;
+    max-width: calc(100vw - 24px);
+    overflow-x: auto;
+  }
+}

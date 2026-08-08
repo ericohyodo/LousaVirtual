@@ -1,0 +1,17 @@
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.slider__label {
+  white-space: nowrap;
+}
+
+.slider input[type='range'] {
+  width: 88px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}

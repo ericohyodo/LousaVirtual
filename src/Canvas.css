@@ -1,0 +1,19 @@
+.canvas {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: var(--canvas-bg);
+  /* Impede scroll/zoom nativo do navegador: os gestos são nossos. */
+  touch-action: none;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.canvas__svg {
+  display: block;
+}
+
+.canvas__grid-dot {
+  fill: var(--grid-dot);
+}

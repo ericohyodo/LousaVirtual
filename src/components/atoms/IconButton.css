@@ -1,0 +1,36 @@
+.icon-button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.icon-button:hover:not(:disabled) {
+  background: var(--surface-hover);
+}
+
+.icon-button--active {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
+.icon-button--active:hover:not(:disabled) {
+  background: var(--accent);
+}
+
+.icon-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.icon-button svg {
+  width: 20px;
+  height: 20px;
+}
