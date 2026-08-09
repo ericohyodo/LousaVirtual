@@ -3,6 +3,7 @@ import { Canvas } from '../../Canvas';
 import { closeBoard, openBoard, useEditor } from '../../boards/boardStore';
 import { goHome } from '../../app/useRoute';
 import { markSaved, onSaveStatus, startAutosave, type SaveStatus } from '../../storage/autosave';
+import { getLinkedFileName, isFileDbLinked } from '../../storage/fileDb';
 import { loadBoard } from '../../storage/local';
 import { useKeyboardShortcuts } from '../../input/useKeyboardShortcuts';
 import { AppLayout } from '../templates/AppLayout';
@@ -62,6 +63,8 @@ export function BoardPage({ boardId }: { boardId: string }) {
     );
   }
 
+  const fileHint = isFileDbLinked() ? ` · ${getLinkedFileName()}` : '';
+
   return (
     <AppLayout
       canvas={<Canvas />}
@@ -72,6 +75,7 @@ export function BoardPage({ boardId }: { boardId: string }) {
         <span>
           {count} {count === 1 ? 'elemento' : 'elementos'}
           {status !== 'idle' && ` · ${STATUS_LABEL[status]}`}
+          {fileHint}
         </span>
       }
     />

@@ -1,10 +1,12 @@
 /**
  * Autosave: escuta o store e grava no IndexedDB com debounce.
+ * Se houver um arquivo `.db` ligado, espelha todas as lousas nele.
  *
  * Grava só quando `board.version` muda — mexer no viewport (pan/zoom) não
  * conta como edição e não deve reordenar a lista de boards por "mais recente".
  */
 import { boardStore } from '../boards/boardStore';
+import { cancelScheduledFileDbFlush, flushFileDb, isFileDbLinked, scheduleFileDbFlush } from './fileDb';
 import { saveBoard } from './local';
 
 const DEBOUNCE_MS = 600;
@@ -35,6 +37,7 @@ async function flush() {
     lastSavedVersion = board.version;
     lastSavedBoardId = board.id;
     emit('saved');
+    scheduleFileDbFlush();
   } catch (error) {
     console.error('Falha ao salvar o board localmente', error);
     emit('error');
@@ -52,12 +55,14 @@ export function startAutosave(): () => void {
     timer = setTimeout(flush, DEBOUNCE_MS);
   });
 
-  // Fechar a aba no meio do debounce não pode custar a última edição.
   const onHide = () => {
-    if (!timer) return;
-    clearTimeout(timer);
-    timer = null;
-    void flush();
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+      void flush();
+    }
+    cancelScheduledFileDbFlush();
+    if (isFileDbLinked()) void flushFileDb();
   };
   document.addEventListener('visibilitychange', onHide);
   window.addEventListener('pagehide', onHide);
@@ -67,6 +72,7 @@ export function startAutosave(): () => void {
     document.removeEventListener('visibilitychange', onHide);
     window.removeEventListener('pagehide', onHide);
     if (timer) clearTimeout(timer);
+    cancelScheduledFileDbFlush();
   };
 }
 

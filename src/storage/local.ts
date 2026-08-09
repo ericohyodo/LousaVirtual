@@ -65,6 +65,22 @@ export async function deleteBoard(id: string): Promise<void> {
   await db.delete(STORE, id);
 }
 
+/** Todas as lousas completas — usado para montar o arquivo `.db`. */
+export async function listAllBoards(): Promise<Board[]> {
+  const db = await getDB();
+  const boards = await db.getAll(STORE);
+  return boards.map(normalizeBoard).sort((a, b) => b.updatedAt - a.updatedAt);
+}
+
+/** Substitui o IndexedDB inteiro pelo conteúdo de um `.db` importado. */
+export async function replaceAllBoards(boards: Board[]): Promise<void> {
+  const db = await getDB();
+  const tx = db.transaction(STORE, 'readwrite');
+  await tx.store.clear();
+  await Promise.all(boards.map((board) => tx.store.put(normalizeBoard(board))));
+  await tx.done;
+}
+
 /** Contagem de elementos por board — usada no card da HomePage. */
 export async function countElements(id: string): Promise<number> {
   const board = await loadBoard(id);

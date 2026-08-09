@@ -26,7 +26,7 @@
 ## Diferenciais — Produtividade (o que separa de um "sketch descartável")
 Uma crítica recorrente a ferramentas tipo Excalidraw é que o board "é feito pra ser jogado fora" — vira rascunho que ninguém revisita. Estas features atacam isso diretamente:
 
-- [ ] **Sync via Google Drive**: autosave periódico como JSON no Drive; ao abrir em outro dispositivo, puxa a versão mais recente. Resolve seu caso de uso principal (anotar no trabalho, continuar em casa).
+- [x] **Arquivo `.db` portátil**: todas as lousas num único arquivo (ex: na pasta do Google Drive no PC); abrir o mesmo arquivo em outro dispositivo continua o trabalho.
 - [ ] **Reconhecimento de forma (shape snapping)**: desenhar um retângulo/círculo "torto" à mão e o app reconhece e endireita a forma — ganho real de produtividade em fluxogramas, sem perder a leveza do traço à mão em anotações livres.
 - [ ] **Biblioteca de elementos reutilizáveis (stencils)**: salvar formas/símbolos usados com frequência (ex: símbolos de GD&T, blocos de fluxograma padrão) e reaproveitar entre boards — dado seu contexto de engenharia, isso tem valor direto.
 - [ ] **Frames/seções nomeadas**: dividir o canvas infinito em áreas nomeadas (ex: "Ideias", "Ação", "Dúvidas") sem precisar de boards separados — ajuda a organizar sem perder o "infinito".

@@ -1,0 +1,371 @@
+{
+  "format": "lousa-virtual-db",
+  "version": 1,
+  "exportedAt": 1786308661534,
+  "boards": [
+    {
+      "id": "34e6f89c-36cb-4992-bd54-c996d4a319fc",
+      "name": "Sobre o App LouPsa Virtual",
+      "createdAt": 1786213924381,
+      "updatedAt": 1786238925350,
+      "background": "#ebf5f1",
+      "viewport": {
+        "x": 7963.762648397516,
+        "y": -1106.9445611331723,
+        "zoom": 0.45427500890454464
+      },
+      "elements": [
+        {
+          "id": "16c464aa-89ce-4ec6-8ba5-506a757ece27",
+          "type": "text",
+          "createdAt": 1786214245215,
+          "updatedAt": 1786214245215,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 4,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8628.183081245677,
+          "y": -238.97843271323757,
+          "content": "",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 20,
+            "bold": false,
+            "italic": false
+          },
+          "locked": false
+        },
+        {
+          "id": "dcc4aae0-7d19-4def-9beb-711a8fcd0f0a",
+          "type": "text",
+          "createdAt": 1786216243632,
+          "updatedAt": 1786216243632,
+          "style": {
+            "color": "#e03131",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8727.815115888801,
+          "y": -66.88318168551905,
+          "content": "",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 16,
+            "bold": false,
+            "italic": false
+          },
+          "locked": false
+        },
+        {
+          "id": "c02bd180-2890-457d-bb09-a1500a8bf082",
+          "type": "text",
+          "createdAt": 1786216246184,
+          "updatedAt": 1786216246184,
+          "style": {
+            "color": "#e03131",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8610.763266523567,
+          "y": 288.3168000039341,
+          "content": "",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 16,
+            "bold": false,
+            "italic": false
+          },
+          "locked": false
+        },
+        {
+          "id": "ff72ccf9-1a38-40ac-ba4f-15c5b70bc8f7",
+          "type": "text",
+          "createdAt": 1786216247986,
+          "updatedAt": 1786216247986,
+          "style": {
+            "color": "#e03131",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 7891.015158613411,
+          "y": 288.3168000039341,
+          "content": "",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 16,
+            "bold": false,
+            "italic": false
+          },
+          "locked": false
+        },
+        {
+          "id": "9e6c112e-195e-419e-9214-f2fedd8a7278",
+          "type": "text",
+          "createdAt": 1786216249832,
+          "updatedAt": 1786216249832,
+          "style": {
+            "color": "#e03131",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8671.815115888801,
+          "y": -66.88318168551905,
+          "content": "",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 16,
+            "bold": false,
+            "italic": false
+          },
+          "locked": false
+        },
+        {
+          "id": "95112777-f5f3-432e-a91d-49ea0c097422",
+          "type": "text",
+          "createdAt": 1786216628008,
+          "updatedAt": 1786216628008,
+          "style": {
+            "color": "#1971c2",
+            "strokeWidth": 2,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 7979.015158613411,
+          "y": -66.88318168551905,
+          "content": "",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 16,
+            "bold": false,
+            "italic": false
+          },
+          "locked": false
+        },
+        {
+          "id": "34c26a81-d280-4544-bb00-518c695a3c09",
+          "type": "card",
+          "variant": "text",
+          "createdAt": 1786218768126,
+          "updatedAt": 1786222014661,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8490.431097432136,
+          "y": -871.4793634597183,
+          "width": 331.5866027474627,
+          "title": "Sistema Com IA",
+          "content": "-Como são esses sistemas? \n-o quê eles estão esperando com isso?\n-IA para relatórios e supervisão\n-IA para processos automatizados",
+          "items": [],
+          "surface": "#ffffff",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 20,
+            "bold": false,
+            "italic": false
+          },
+          "minHeight": 181.64136155734977,
+          "locked": false
+        },
+        {
+          "id": "41b24d81-fe60-4fd3-bb93-00e17d22f123",
+          "type": "shape",
+          "shapeType": "rectangle",
+          "createdAt": 1786221767679,
+          "updatedAt": 1786238860172,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 1,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8457.036114221017,
+          "y": -895.8914845554552,
+          "width": 978.1206535281202,
+          "height": 579.1748321689677,
+          "rotation": 0,
+          "locked": false
+        },
+        {
+          "id": "46c8951d-e893-4c76-b9f4-32852c5e4b29",
+          "type": "card",
+          "variant": "text",
+          "createdAt": 1786221882113,
+          "updatedAt": 1786221976627,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8917.344242335288,
+          "y": -866.9624747007224,
+          "width": 449.93063816561585,
+          "title": "Como IA entende a empresa",
+          "content": "",
+          "items": [],
+          "surface": "#ffffff",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 20,
+            "bold": false,
+            "italic": false
+          },
+          "minHeight": 223.8274163566926,
+          "locked": false
+        },
+        {
+          "id": "1c5f1068-3ebd-41a8-bd2f-cc0a3979e8ca",
+          "type": "card",
+          "variant": "text",
+          "createdAt": 1786236343738,
+          "updatedAt": 1786236399522,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8917.344242335288,
+          "y": -574.4793634597183,
+          "width": 449.93063816561585,
+          "title": "Como Automatizar Tarefas Analógicas",
+          "content": "",
+          "items": [],
+          "surface": "#ffffff",
+          "text": {
+            "fontFamily": "Inter, system-ui, sans-serif",
+            "fontSize": 20,
+            "bold": false,
+            "italic": false
+          },
+          "minHeight": 223.8274163566926,
+          "locked": false
+        },
+        {
+          "id": "2e32c578-cf37-478a-af68-5265617e9b03",
+          "type": "shape",
+          "shapeType": "arrow",
+          "createdAt": 1786236411423,
+          "updatedAt": 1786236412197,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8860.227972432136,
+          "y": -780.6586826810435,
+          "width": 57.11626990315199,
+          "height": 25.609916158667374,
+          "rotation": 0,
+          "locked": false
+        },
+        {
+          "id": "cebd780a-0ead-4afe-a883-aa5fb02860a6",
+          "type": "shape",
+          "shapeType": "arrow",
+          "createdAt": 1786236413510,
+          "updatedAt": 1786236414286,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 6,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 9142.309561418097,
+          "y": -643.1350583440299,
+          "width": 0,
+          "height": 68.65569488431152,
+          "rotation": 0,
+          "locked": false
+        },
+        {
+          "id": "f68e5e66-2b5b-491c-bb9d-8d644867a991",
+          "type": "shape",
+          "shapeType": "rectangle",
+          "createdAt": 1786236431697,
+          "updatedAt": 1786237219221,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 1,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8193.570499955242,
+          "y": -880.2130007785506,
+          "width": -750.2063480097264,
+          "height": 1046.062447088464,
+          "rotation": 0,
+          "locked": false
+        },
+        {
+          "id": "d030fe15-6ce0-4dd0-b5a5-cf266885ec1d",
+          "type": "shape",
+          "shapeType": "rectangle",
+          "createdAt": 1786238864313,
+          "updatedAt": 1786238925350,
+          "style": {
+            "color": "#1a1a1a",
+            "strokeWidth": 1,
+            "opacity": 1,
+            "fill": "none"
+          },
+          "x": 8456.96855564003,
+          "y": -273.2974027853265,
+          "width": 977.4082594971835,
+          "height": 368.1216702174085,
+          "rotation": 0,
+          "locked": false
+        }
+      ],
+      "frames": [
+        {
+          "id": "ea2cd5fd-a460-45ae-9c81-7917c581ffd4",
+          "name": "A4 vertical",
+          "x": 7420.58681549164,
+          "y": -936.0180339657738,
+          "width": 794,
+          "height": 1123,
+          "color": "rgba(255,255,255,0.92)",
+          "locked": true
+        },
+        {
+          "id": "4432c6b6-f0b3-40cc-a11c-95d565d4262c",
+          "name": "A3 vertical",
+          "x": 8371.597664436915,
+          "y": -961.1397194955589,
+          "width": 1123,
+          "height": 1587,
+          "color": "rgba(255,255,255,0.92)",
+          "locked": true
+        }
+      ],
+      "version": 5255,
+      "backgroundGradient": "linear-gradient(165deg, #f0fbf5 0%, #e6f3ef 55%, #e9f0f7 100%)"
+    },
+    {
+      "id": "f84ad41e-4657-45ca-8e14-6486c6880cc9",
+      "name": "Lousa 08/08/2026",
+      "createdAt": 1786222540059,
+      "updatedAt": 1786222540059,
+      "background": "#fbfbfa",
+      "viewport": {
+        "x": 0,
+        "y": 0,
+        "zoom": 1
+      },
+      "elements": [],
+      "frames": [],
+      "version": 1
+    }
+  ]
+}

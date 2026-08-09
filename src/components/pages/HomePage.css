@@ -28,25 +28,75 @@
   font-size: 13px;
 }
 
+.home__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.home__db-line {
+  margin: 6px 0 0;
+  color: var(--fg);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.home__drive-msg {
+  margin: 8px 0 0;
+  max-width: 52ch;
+  color: var(--fg-muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.home__drive-msg code {
+  font-size: 11px;
+}
+
+.home__drive,
 .home__new {
   display: inline-flex;
   align-items: center;
   gap: 7px;
   padding: 9px 16px;
-  border: none;
   border-radius: 9px;
-  background: var(--accent);
-  color: var(--accent-fg);
   font: inherit;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
 
+.home__drive {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+}
+
+.home__drive:hover:not(:disabled) {
+  background: var(--surface-hover);
+}
+
+.home__drive--ghost {
+  color: var(--fg-muted);
+}
+
+.home__drive:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.home__new {
+  border: none;
+  background: var(--accent);
+  color: var(--accent-fg);
+}
+
 .home__new:hover {
   filter: brightness(1.08);
 }
 
+.home__drive svg,
 .home__new svg {
   width: 18px;
   height: 18px;
