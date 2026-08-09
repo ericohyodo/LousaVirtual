@@ -1,0 +1,24 @@
+.inline-editor {
+  position: absolute;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 1px dashed var(--accent);
+  outline-offset: 2px;
+  background: transparent;
+  /* O campo fica por cima do canvas, mas a "tinta" real é o SVG embaixo. */
+  caret-color: currentColor;
+  white-space: pre;
+}
+
+.inline-editor::placeholder {
+  color: currentColor;
+  opacity: 0.35;
+}
+
+.inline-editor--area {
+  overflow: hidden;
+  resize: none;
+  white-space: pre;
+}

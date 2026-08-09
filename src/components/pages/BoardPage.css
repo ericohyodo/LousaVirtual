@@ -1,0 +1,45 @@
+.board-page__status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.board-page__name {
+  width: 150px;
+  padding: 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.board-page__name:hover {
+  border-color: var(--border);
+}
+
+.board-page__name:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.board-page__missing {
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  height: 100%;
+  color: var(--fg-muted);
+  text-align: center;
+}
+
+.board-page__missing button {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--fg);
+  font: inherit;
+  cursor: pointer;
+}

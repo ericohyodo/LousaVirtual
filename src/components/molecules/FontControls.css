@@ -1,0 +1,26 @@
+.font-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.font-controls__value {
+  min-width: 38px;
+  color: var(--fg-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-controls__glyph {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.font-controls__glyph--bold {
+  font-weight: 700;
+}
+
+.font-controls__glyph--italic {
+  font-family: Georgia, serif;
+  font-style: italic;
+}

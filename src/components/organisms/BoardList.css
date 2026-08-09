@@ -1,0 +1,12 @@
+.board-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.board-list__empty {
+  padding: 40px 0;
+  color: var(--fg-muted);
+  font-size: 14px;
+  text-align: center;
+}

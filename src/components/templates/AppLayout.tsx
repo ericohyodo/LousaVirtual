@@ -2,17 +2,22 @@ import type { ReactNode } from 'react';
 import './AppLayout.css';
 
 interface AppLayoutProps {
-  /** O canvas ocupa a tela inteira; a toolbar flutua por cima. */
   canvas: ReactNode;
-  toolbar: ReactNode;
+  header: ReactNode;
+  tools: ReactNode;
+  options: ReactNode;
   statusBar?: ReactNode;
 }
 
-export function AppLayout({ canvas, toolbar, statusBar }: AppLayoutProps) {
+export function AppLayout({ canvas, header, tools, options, statusBar }: AppLayoutProps) {
   return (
     <div className="app-layout">
       <div className="app-layout__stage">{canvas}</div>
-      <div className="app-layout__toolbar">{toolbar}</div>
+      <header className="app-layout__header">{header}</header>
+      <div className="app-layout__rails">
+        <div className="app-layout__tools">{tools}</div>
+        <div className="app-layout__options">{options}</div>
+      </div>
       {statusBar && <div className="app-layout__status">{statusBar}</div>}
     </div>
   );

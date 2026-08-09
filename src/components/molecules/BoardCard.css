@@ -1,0 +1,96 @@
+.board-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color 120ms ease, transform 120ms ease;
+}
+
+.board-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.board-card__preview {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.board-card__initial {
+  font-size: 40px;
+  font-weight: 600;
+  opacity: 0.25;
+}
+
+.board-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px 10px;
+}
+
+.board-card__name {
+  padding: 2px 4px;
+  margin-left: -4px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.board-card__name:hover {
+  border-color: var(--border);
+}
+
+.board-card__name:focus-visible {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.board-card__date {
+  color: var(--fg-muted);
+  font-size: 11px;
+}
+
+.board-card__delete {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--fg-muted);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 120ms ease, color 120ms ease;
+}
+
+.board-card:hover .board-card__delete,
+.board-card__delete:focus-visible {
+  opacity: 0.9;
+}
+
+.board-card__delete:hover {
+  color: #e03131;
+}
+
+.board-card__delete svg {
+  width: 16px;
+  height: 16px;
+}

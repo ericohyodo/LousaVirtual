@@ -28,7 +28,14 @@ export function createStore<T extends object>(initial: T): Store<T> {
   };
 }
 
-/** Hook com seletor — só re-renderiza quando a fatia selecionada muda (Object.is). */
+/**
+ * Hook com seletor — só re-renderiza quando a fatia selecionada muda (Object.is).
+ *
+ * O seletor **precisa** devolver a mesma referência para o mesmo estado:
+ * `s => s.items.filter(...)` cria um array novo a cada chamada e joga o
+ * `useSyncExternalStore` num laço infinito de renderização. Selecione a fatia
+ * crua e derive no corpo do componente.
+ */
 export function useStore<T extends object, S>(store: Store<T>, selector: (state: T) => S): S {
   return useSyncExternalStore(
     store.subscribe,

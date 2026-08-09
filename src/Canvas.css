@@ -2,7 +2,6 @@
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: var(--canvas-bg);
   /* Impede scroll/zoom nativo do navegador: os gestos são nossos. */
   touch-action: none;
   overscroll-behavior: none;
@@ -14,6 +13,94 @@
   display: block;
 }
 
-.canvas__grid-dot {
-  fill: var(--grid-dot);
+.canvas__selection {
+  fill: none;
+  stroke: var(--accent);
+  pointer-events: none;
+}
+
+/* Pontos de conexão: discretos até o cursor chegar perto de um. */
+.canvas__snap {
+  fill: var(--accent);
+  stroke: none;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.canvas__vertex {
+  fill: var(--surface);
+  stroke: var(--accent);
+  pointer-events: none;
+}
+
+.canvas__handle {
+  fill: var(--surface);
+  stroke: var(--accent);
+  pointer-events: none;
+}
+
+.canvas__handle--vertex {
+  fill: var(--accent);
+  stroke: var(--surface);
+}
+
+.canvas__selection--locked {
+  stroke: var(--fg-muted);
+  stroke-dasharray: 2 4;
+}
+
+/* Botão "+" de adicionar linha — mesma ideia da alça de tabela do Word. */
+.canvas__add-row circle {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 0;
+}
+
+.canvas__add-row path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-linecap: round;
+}
+
+.canvas__snap--active {
+  fill: none;
+  stroke: var(--accent);
+  opacity: 1;
+}
+
+.canvas__marquee {
+  fill: rgba(59, 130, 246, 0.08);
+  stroke: #3b82f6;
+  pointer-events: none;
+}
+
+.canvas__marquee--crossing {
+  fill: rgba(34, 197, 94, 0.08);
+  stroke: #22c55e;
+}
+
+.canvas__align-guide {
+  stroke: #f97316;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.canvas__poly-action circle {
+  stroke-width: 0;
+}
+
+.canvas__poly-action--confirm circle {
+  fill: #22c55e;
+}
+
+.canvas__poly-action--confirm path {
+  stroke: #fff;
+}
+
+.canvas__poly-action--cancel circle {
+  fill: #ef4444;
+}
+
+.canvas__poly-action--cancel path {
+  stroke: #fff;
 }

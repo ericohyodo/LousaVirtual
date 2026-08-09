@@ -1,29 +1,38 @@
 .toolbar {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
-  padding: 6px 10px;
+  gap: 4px;
+  padding: 4px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--surface);
   box-shadow: var(--shadow);
 }
 
 .toolbar__divider {
-  width: 1px;
-  height: 22px;
+  width: 100%;
+  height: 1px;
   background: var(--border);
 }
 
+.toolbar__footer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2px;
+  justify-content: center;
+}
+
 .toolbar__zoom {
-  min-width: 52px;
-  padding: 4px 6px;
+  width: 39px;
+  height: 30px;
+  padding: 0;
   border: none;
   border-radius: 6px;
   background: transparent;
   color: var(--fg-muted);
   font: inherit;
-  font-size: 12px;
+  font-size: 10px;
   font-variant-numeric: tabular-nums;
   cursor: pointer;
 }
